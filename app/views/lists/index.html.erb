@@ -1,9 +1,17 @@
-<h1>List of movie categories</h1>
+<div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/free-vector/realistic-horizontal-cinema-movie-time-poster-with-3d-glasses-snacks-tickets-clapper-reel-blue-background-with-bokeh-vector-illustration_1284-77013.jpg?w=2000&t=st=1678530378~exp=1678530978~hmac=4506930c5107b132dc6bff22cdce3e8d8242e1cd341da6ae5410a3dbaf7c8a62);">
+  <div class="container">
+    <h1>List of movie categories</h1>
+  </div>
+</div>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="cards">
+    <% @lists.each do |list| %>
+    <div class="card p-3 text-center shadow">
+      <h5><%= link_to list.name, list_path(list), class: "text-decoration-none link" %></h5>
+    </div>
+    <% end %>
+  </div>
 
-<%= link_to "New list", new_list_path %>
+  <%= link_to "New list", new_list_path, class: "btn btn-primary mt-3 btnlink" %>
+</div>
