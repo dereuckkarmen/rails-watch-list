@@ -4,14 +4,14 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="form-inputs m-3">
     <%= f.input :comment %>
 
-  <div class="form-inputs">
+  <div class="form-inputs m-3">
     <%= f.association :movie %>
   </div>
 
-  <div class="form-actions btn btn-primary">
+  <div class="form-actions btn btn-primary m-3">
     <%= f.button :submit %>
   </div>
 <% end %>

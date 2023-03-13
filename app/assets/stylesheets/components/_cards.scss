@@ -1,3 +1,4 @@
+// le wagon ui
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,6 +39,32 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+// le wagon ui
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+// I added
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 
 // .card {
 //   // background-size: cover;
@@ -54,6 +81,7 @@
 //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 // }
 
+// I added
 .card {
   border-radius: 8px;
   // overflow: hidden;
@@ -171,77 +199,7 @@
 //     cursor: pointer;
 //     font-family: 'merriweather';
 // }
-@media (min-width: 48em) {
-  .Grid--3 {
-      grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
-@media (min-width: 37.5em) {
-  .Grid--3 {
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
-.Grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 32px;
-    margin: 0 auto;
-    max-width: 1170px;
-    width: 90%;
-}
-
-@media screen and (min-width: 500px) {
-  .Grid--3 {
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
-.bg-grey {
-  background: #f9fafc;
-}
-
-.Container {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1170px;
-  padding: 60px 0;
-}
-
-
-.Card {
-  background: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  min-height: 100%;
-  position: relative;
-  top: 0;
-  transition: all .1s ease-in;
-  border-radius: 8px;
-}
-
-.pa4 {
-  padding: 24px;
-}
-
-.Card-thumb--landscape, .Card-thumb--portrait {
-  border-radius: 4px 4px 0 0;
-}
-
-.Card-thumb {
-  background: #1b202f;
-  background-size: cover;
-  background-position: center center;
-  min-height: 184px;
-  position: relative;
-  height: 100%;
-}
-
-.mr1 {
-  margin-right: 4px;
-}
 
 // .Button--s {
 //   line-height: 32px;
@@ -258,26 +216,8 @@
 //   border: none;
 //   color: #fff;
 // }
-.Button {
-  height: 40px;
-  background: #4a8cff;
-  border: none;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  transition-duration: .4s;
-  border-radius: 4px;
-  box-sizing: border-box;
-  outline: 0;
-  display: inline-block;
-  // line-height: 1em;
-  padding: 16px;
-}
 
 
-.mt3 {
-  margin-top: 16px;
-}
 
 .link {
   color: rgb(1, 1, 1);
@@ -290,4 +230,5 @@
 
 .btnlink {
   border-radius: 8px;
+  
 }
